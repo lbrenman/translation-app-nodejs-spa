@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Translator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        label {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        select, input, button {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+        #translatedText {
+            margin-top: 20px;
+            font-weight: bold;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Translator</h1>
+    <label for="sourceLanguage">Source Language:</label>
+    <select id="sourceLanguage"></select>
+
+    <label for="targetLanguage">Target Language:</label>
+    <select id="targetLanguage"></select>
+
+    <label for="textToTranslate">Text to Translate:</label>
+    <input type="text" id="textToTranslate" placeholder="Enter text to translate">
+
+    <button id="translateButton">Translate</button>
+    <div id="translatedText"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

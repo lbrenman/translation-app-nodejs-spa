@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        select, input, button {
+            display: block;
+            margin: 10px 0;
+        }
+        #translatedText {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Translator</h1>
+    <label for="sourceLanguage">Source Language:</label>
+    <select id="sourceLanguage"></select>
+
+    <label for="targetLanguage">Target Language:</label>
+    <select id="targetLanguage"></select>
+
+    <label for="textToTranslate">Text to Translate:</label>
+    <input type="text" id="textToTranslate" placeholder="Enter text to translate">
+
+    <button id="translateButton">Translate</button>
+    <div id="translatedText"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
